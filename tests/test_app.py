@@ -1,4 +1,4 @@
-from app import add,subtract
+from app import add,subtract,multipication
 
 
 def test_add():
@@ -6,3 +6,6 @@ def test_add():
 
 def test_subtract():
     assert subtract(3, 2) == 1
+
+def test_multipication():
+    assert multipication(3,2)==6
