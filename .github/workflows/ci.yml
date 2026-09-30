@@ -46,3 +46,26 @@ jobs:
 
       - name: Check Python syntax
         run: python -m compileall .
+
+  information:
+    
+    runs-on: ubuntu-latest
+
+    steps:
+
+        - name: Checkout the code
+          uses: actions/checkout@v4
+
+        - name: Set up Python
+          uses: actions/setup-python@v5
+          with:
+            python-version: "3.12"
+
+        - name: Display Python's version
+          run: python --version
+        
+        - name: Display the current directory
+          run: pwd
+
+        - name: List the files
+          run: ls
