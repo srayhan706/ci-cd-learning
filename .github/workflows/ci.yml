@@ -31,6 +31,8 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
+    env:
+      APP_ENV: ci
 
     steps:
       - name: Checkout code
